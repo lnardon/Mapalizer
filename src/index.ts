@@ -8,5 +8,9 @@ export default function Mapalizer(
   finalTargetVal: number
 ): number {
   let result = 0;
+  result =
+    ((value - initalBaseVal) / (finalBaseVal - initalBaseVal)) *
+      (finalTargetVal - initalTargetVal) +
+    initalTargetVal;
   return result;
 }
