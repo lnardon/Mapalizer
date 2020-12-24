@@ -1,7 +1,7 @@
 {
   "name": "mapalizer",
-  "version": "0.1.0",
-  "description": "Map & Normalize values between a range",
+  "version": "1.0.0",
+  "description": "Map & Normalize values between a given range",
   "main": "lib/index.js",
   "types": "lib",
   "scripts": {
@@ -13,7 +13,13 @@
     "type": "git",
     "url": "github.com/lnardon/Mapalizer"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "normalize",
+    "mapalizer",
+    "range",
+    "lnardon"
+  ],
   "author": "github.com/lnardon",
   "license": "MIT",
   "devDependencies": {

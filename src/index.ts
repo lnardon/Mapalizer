@@ -1,16 +1,19 @@
-// Y = (X-A)/(B-A) * (D-C) + C => Linear Transform Formula
-
 export default function Mapalizer(
   value: number,
   initalBaseVal: number,
   finalBaseVal: number,
   initalTargetVal: number,
-  finalTargetVal: number
+  finalTargetVal: number,
+  precision: number = 0
 ): number {
-  let result = 0;
+  let result: number = 0;
   result =
     ((value - initalBaseVal) / (finalBaseVal - initalBaseVal)) *
       (finalTargetVal - initalTargetVal) +
     initalTargetVal;
+
+  if (precision !== 0) {
+    result = parseFloat(result.toFixed(precision));
+  }
   return result;
 }
